@@ -7,7 +7,7 @@
 <meta name="description" content="아이들이 그림을 조립하는 가족용 퍼즐 놀이. 사진은 기기 안에만 저장됩니다."/>
 <meta name="robots" content="noindex,nofollow,noarchive"/>
 <link rel="manifest" href="./manifest.webmanifest"/>
-<link rel="icon" type="image/svg+xml" href="./icons/puzzle.svg"/><link rel="apple-touch-icon" href="./icons/puzzle.svg"/><title>조각조각 놀이터 v0.6 · 퍼즐 게임</title>
+<link rel="icon" type="image/svg+xml" href="./icons/puzzle.svg"/><link rel="apple-touch-icon" href="./icons/puzzle.svg"/><title>조각조각 놀이터 v0.6.1 · 퍼즐 게임</title>
 <style>
 :root{font-family:system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:#2f4150;background:#f7faf5;--ink:#2f4150;--forest:#325e54;--cream:#fffef9;--mint:#e6f1e9;--shadow:0 18px 45px #475b5020}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 85% 0,#fff1d3 0,transparent 35%),radial-gradient(circle at 0 80%,#e0f2f5,transparent 35%),#f7faf5;color:var(--ink)}body{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation}button:focus-visible{outline:3px solid #4e92c0;outline-offset:3px}[hidden]{display:none!important}
@@ -75,7 +75,7 @@ body.playing .trayPager{display:none!important}
 <section class="pane" id="galleryView" hidden><button class="miniNav" id="galleryBack">← 처음으로</button><h1 class="title">어떤 그림이 좋아?</h1><p class="subtitle">좋아하는 그림을 톡 눌러주세요. 엄마 아빠의 사진도 골라볼 수 있어요!</p><div class="tileGrid" id="galleryCards"></div><p class="hintText">🔒 새로운 사진은 오른쪽 위 '부모' 버튼을 길게 눌러 추가해 주세요.</p></section>
 <section class="pane" id="chooseView" hidden><button class="miniNav" id="chooseBack">← 그림 다시 고르기</button><h1 class="title">이렇게 놀아볼까?</h1><div class="panel setup"><img class="setupPreview" id="setupImage" alt="선택한 퍼즐 그림"/><div class="setupControls"><h2 id="setupTitle" style="margin:0;font-size:23px">퍼즐 그림</h2><div><b>조각 모양</b><div class="choiceRow" style="margin-top:10px"><button class="choice" data-style="classic"><span class="illustration">🧩</span>기본 직소</button><button class="choice" data-style="organic"><span class="illustration">🌊</span>재미있는 모양</button></div></div><div><b>몇 조각?</b><div class="numbers" id="countChoices" style="margin-top:10px"></div></div><button id="startBtn" class="bigBtn">✨ 퍼즐 시작!</button><span class="fine">조각은 돌려야 하지 않아요. 맞는 자리에 놓으면 톡! 하고 붙어요.</span></div></div></section>
 <section class="pane" id="gameView" hidden><div class="gameHeader"><div class="gameMeta"><b id="gameTitle">퍼즐</b><small id="gameSubtitle">재미있는 모양 · 6조각</small></div><div class="gameTools"><span class="progress" id="progressText">0 / 6</span><button class="hintBtn active" id="hintBtn" aria-pressed="true">💡 힌트</button><button class="hintBtn" id="undoBtn" disabled title="마지막으로 맞춘 조각 되돌리기" aria-label="마지막 조각 되돌리기">↶ 되돌리기</button><button class="hintBtn" id="resetBtn" title="조각 다시 섞기">↻</button></div></div><div class="stageCard"><svg id="stage" viewBox="0 0 900 518" role="img" aria-label="왼쪽의 사각형 퍼즐 판에 오른쪽 조각을 드래그해 맞춰 보세요"></svg><div class="overlay" id="overlay" hidden><div class="victory"><div class="confetti" id="confetti"></div><span class="reaction" id="reaction">🎉</span><h2>정말 잘했어요!</h2><p id="victoryText">멋진 그림이 완성됐어요!</p><div class="btnRow" style="justify-content:center"><button class="bigBtn secondary" id="againBtn">↻ 다시 하기</button><button class="bigBtn" id="nextBtn">🌈 다른 그림</button></div><button id="undoVictoryBtn">↶ 마지막 조각 다시 해볼래</button></div></div></div><div class="instructions"><span>☝️ 조각을 잡고 알맞은 자리에 놓아보세요.</span></div></section>
-<footer class="notice">체험판 v0.5 · 새 기본 그림 6종이 파일 안에 포함되어 인터넷 없이 실행됩니다. · 부모 사진은 외부 서버로 전송하지 않습니다.</footer></div>
+<footer class="notice">체험판 v0.6.1 · 새 기본 그림 6종이 파일 안에 포함되어 인터넷 없이 실행됩니다. · 부모 사진은 외부 서버로 전송하지 않습니다.</footer></div>
 <div id="parentModal" class="modalShade" hidden role="dialog" aria-modal="true" aria-label="부모 관리실"><div class="modal"><div class="top"><h2>🔒 엄마 아빠 관리실</h2><button id="closeParent" class="iconBtn" aria-label="닫기">✕</button></div><p class="fine">그림을 직접 골라 퍼즐로 만들어 주세요. 앱에서는 디즈니 등 다른 회사의 캐릭터 그림을 기본 제공하지 않습니다.</p><section><b>📷 우리 집 그림 추가</b><p class="fine">JPG / PNG / WebP · 15MB 이하 · 사진 전체 맞춤 또는 원하는 부분 자르기를 직접 선택할 수 있어요.</p><label class="fileZone" style="display:block">➕ 사진·그림 선택<br/><input id="photoInput" type="file" accept="image/png,image/jpeg,image/webp" multiple style="margin-top:10px"/></label><p class="fine" id="uploadStatus" aria-live="polite">기기 안에서만 이미지 크기를 줄이고 저장합니다.</p></section><section><b>🖼️ 등록한 그림</b><div id="parentPhotoList" class="parentList"></div><p class="fine">이 브라우저의 저장 공간을 지우면 등록한 사진이 삭제될 수 있습니다. 중요한 사진은 원본도 따로 보관하세요.</p></section><section><b>🎵 놀이 설정</b><label style="display:block;margin-top:10px"><input type="checkbox" id="soundCheck" checked/> 조각 맞춤·완성 효과음 사용</label><p class="fine">이 샘플의 관리실은 부모 버튼 1초 길게 누르기로 들어갑니다. PIN과 백업 기능은 정식 버전에 추가할 예정입니다.</p></section></div></div>
 <script>
 (()=>{'use strict';
@@ -107,7 +107,7 @@ function dynamicLayout(){
   const tray={x:trayX,y:8,w:Math.max(175,vw-trayX-10),h:vh-16};
   const columns=tray.w>=520?4:tray.w>=365?3:2;
   const rows=tray.w>=520?2:tray.w>=365?3:4;
-  const gapX=8,gapY=8;
+  const gapX=15,gapY=10;
   const tileW=(tray.w-27-gapX*(columns-1))/columns;
   const smallTray=tray.w<390;
   const tileH=(tray.h-(smallTray?107:88)-gapY*(rows-1))/rows;
@@ -241,15 +241,12 @@ function frame(){
  const back=S('g',{id:'boardBack',transform:`translate(${L.bx},${L.by}) scale(${L.scale})`},stage);
  S('image',{href:state.art,x:0,y:0,width:B.w,height:B.h,opacity:state.hint?.25:0,preserveAspectRatio:'none'},back);
  for(const p of state.pieces)S('path',{d:p.path,fill:'rgba(255,255,255,.06)',stroke:state.hint?'#9aaeb0':'#cad8d0','stroke-width':state.hint?2.3:1.8,'stroke-dasharray':'6 5','stroke-linejoin':'round'},back);
- S('rect',{...L.tray,rx:19,fill:'#fffefb',stroke:'#d4e5d7','stroke-width':2},stage);
+ S('rect',{...L.tray,rx:19,fill:'#f6faf6',stroke:'#c5ded0','stroke-width':2},stage);
  textNode(L.tray.x+13,L.tray.y+27,'🧩 조각을 골라요',L.tray.w<390?15:17,'#426a57',850);
  if(L.tray.w<390)textNode(L.tray.x+13,L.tray.y+49,'↔ 옆으로 밀어 찾아요',12,'#668b76',750);
  else textNode(L.tray.x+L.tray.w-14,L.tray.y+29,'↔ 옆으로 밀어 찾아요',13,'#668b76',750,stage,{'text-anchor':'end'});
- const slots=S('g',{'clip-path':'url(#trayViewport)'},stage);
- for(let r=0;r<L.rows;r++)for(let c=0;c<L.columns;c++){
-   const x=L.tile.x+c*(L.tile.w+L.tile.gapX),y=L.tile.y+r*(L.tile.h+L.tile.gapY);
-   S('rect',{x,y,width:L.tile.w,height:L.tile.h,rx:13,fill:'#f3faf5',stroke:'#e4eee5','stroke-width':1.4},slots);
- }
+ // One uninterrupted tray surface. There are NO rectangular tile slots:
+ // the regular grid is used only for non-overlapping piece positions.
  S('g',{id:'placedLayer'},stage);
  S('g',{id:'trayPieces','clip-path':'url(#trayViewport)','aria-label':'조각 보관함: 좌우로 밀어 다른 조각 보기'},stage);
  S('g',{id:'dragLayer'},stage);
@@ -294,6 +291,13 @@ function repositionTray(animate=false){
  }
 }
 
+// After a swipe, align the tray to the nearest piece column. Scrolling is
+// still continuous while the child moves a finger, not discrete page turning.
+function settleTrayScroll(){
+ const {pitch,maxScroll}=trayMetrics();
+ state.scrollX=Math.max(0,Math.min(maxScroll,Math.round(state.scrollX/pitch)*pitch));
+ repositionTray(true);
+}
 function svgXY(ev){const m=stage.getScreenCTM();if(!m)return{x:0,y:0};const p=new DOMPoint(ev.clientX,ev.clientY).matrixTransform(m.inverse());return{x:p.x,y:p.y}}
 function findPiece(id){return state.pieces.find(p=>p.id===id)}
 function withinTray(q){const L=state.layout;return q.x>=L.tray.x&&q.x<=L.tray.x+L.tray.w&&q.y>=L.tray.y&&q.y<=L.tray.y+L.tray.h}
@@ -342,8 +346,9 @@ function onUp(e){
  state.gesture=null;
  try{stage.releasePointerCapture(e.pointerId)}catch{}
  if(a.mode!=='drag'){
-  // No forced page jump: free continuous horizontal swipe is simpler for children.
-  repositionTray(false);return;
+  // Smooth one-column alignment prevents cut-off half-pieces at rest.
+  if(a.mode==='scroll')settleTrayScroll();else repositionTray(false);
+  return;
  }
  const p=a.p;p.el.classList.remove('dragging');
  const targetX=state.layout.bx+p.bbox.x*state.layout.scale,targetY=state.layout.by+p.bbox.y*state.layout.scale;
