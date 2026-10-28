@@ -1,5 +1,5 @@
 // Public app files only. Parent photos and saved games are never sent to the server.
-const CACHE_NAME = 'jj-puzzle-public-v06';
+const CACHE_NAME = 'jj-puzzle-public-v061';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/puzzle.svg'];
 self.addEventListener('install', event => event.waitUntil(
   caches.open(CACHE_NAME).then(cache => cache.addAll(CORE)).then(()=>self.skipWaiting())
