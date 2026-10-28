@@ -1,5 +1,5 @@
-// App files are public. Parent photos and puzzle progress remain on-device only.
-const CACHE_NAME = 'jj-puzzle-public-v05';
+// Public app files only. Parent photos and saved games are never sent to the server.
+const CACHE_NAME = 'jj-puzzle-public-v06';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/puzzle.svg'];
 self.addEventListener('install', event => event.waitUntil(
   caches.open(CACHE_NAME).then(cache => cache.addAll(CORE)).then(()=>self.skipWaiting())
@@ -12,7 +12,6 @@ self.addEventListener('fetch', event => {
   if(req.method!=='GET'||new URL(req.url).origin!==self.location.origin)return;
   const url=new URL(req.url);
   if(!CORE.some(path=>url.pathname===new URL(path,self.registration.scope).pathname))return;
-  // Network-first for updates (avoids trapping families on a stale puzzle build).
   event.respondWith(fetch(req).then(resp=>{
     if(resp.ok&&resp.type==='basic'){const copy=resp.clone();caches.open(CACHE_NAME).then(cache=>cache.put(req,copy));}
     return resp;
