@@ -1,0 +1,191 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/File:English_alphabet_woman.oga",
+  "source_sha256": "b788635d4ea5bc40c03f2578c12562bd3fb37dc2456e75461df1bdacbc19453e",
+  "duration": 41.052875,
+  "threshold": 0.08,
+  "gap": 0.34,
+  "segments": [
+    {
+      "letter": "A",
+      "start": 0.63,
+      "end": 1.2,
+      "size": 6525,
+      "sha256": "aedc717116f536d024d687345a441e56483ff4cdbda41838d4b72745222d8894"
+    },
+    {
+      "letter": "B",
+      "start": 2.06,
+      "end": 2.6,
+      "size": 6285,
+      "sha256": "42e45fdca94ae90a6926bccfe01dbcbb5c4cb83e52990f9438d7e41bad4af0aa"
+    },
+    {
+      "letter": "C",
+      "start": 3.18,
+      "end": 4.01,
+      "size": 9165,
+      "sha256": "23a20dc832b765d9954f0fd8cd2ea2fb71d2498276f9d6dbaee92a6cd7a46890"
+    },
+    {
+      "letter": "D",
+      "start": 4.87,
+      "end": 5.39,
+      "size": 6045,
+      "sha256": "809f501da4a0718cd2d720f37c287d6a63d7f7f902fd5e01a3556e44fe2f221a"
+    },
+    {
+      "letter": "E",
+      "start": 6.24,
+      "end": 6.79,
+      "size": 6285,
+      "sha256": "9485675105d2cc6ae8a6a630cf12eddb5beddb2ab6dc5257d6a04ca109b370cb"
+    },
+    {
+      "letter": "F",
+      "start": 7.63,
+      "end": 8.0,
+      "size": 4605,
+      "sha256": "4990cd3490eca5c421e4b7b9059207b035cad6bb6f69b3e7c1a9fd698cc4b926"
+    },
+    {
+      "letter": "G",
+      "start": 9.09,
+      "end": 9.61,
+      "size": 6045,
+      "sha256": "f70aca4093393f0a639d4c7255bb8c0bb2cb2460b589e10634115f7062888c5e"
+    },
+    {
+      "letter": "H",
+      "start": 10.5,
+      "end": 11.25,
+      "size": 8445,
+      "sha256": "7a5b9ac0e60136c6ab04f80f6d61bfaf57d58571f5c07660e6170782c13a4293"
+    },
+    {
+      "letter": "I",
+      "start": 12.08,
+      "end": 12.7,
+      "size": 7245,
+      "sha256": "d77d5e8c777dbdc46b9368197eea567874f63d7d7262e71a155dc17aafba9b9a"
+    },
+    {
+      "letter": "J",
+      "start": 13.65,
+      "end": 14.22,
+      "size": 6525,
+      "sha256": "dad5d463a3366bad9812b2bd7831868913ec62395700dffbd5d3621f62746c7f"
+    },
+    {
+      "letter": "K",
+      "start": 15.13,
+      "end": 15.72,
+      "size": 6765,
+      "sha256": "c6c88b1933f5c7aacea5f448627a010ed816ec0f6e330eb407d41f61544b6431"
+    },
+    {
+      "letter": "L",
+      "start": 16.67,
+      "end": 17.33,
+      "size": 7485,
+      "sha256": "7f26ed588c6f3d4546f34ad4ec570df9c8d37ff1d7e116423d37ecfa3bd39396"
+    },
+    {
+      "letter": "M",
+      "start": 18.13,
+      "end": 18.74,
+      "size": 7005,
+      "sha256": "78775ca38eb04cec969f74f2a2a2947e0c6d3bbc6c1b1934d1fbf798ab3c2b22"
+    },
+    {
+      "letter": "N",
+      "start": 19.65,
+      "end": 20.24,
+      "size": 6765,
+      "sha256": "0ddd1d3c1f221ba47cf1d10ffbc547c05f82a0bfd8a7e32bc8c8e03ff0f8b3c1"
+    },
+    {
+      "letter": "O",
+      "start": 21.25,
+      "end": 21.86,
+      "size": 7005,
+      "sha256": "1e434fa131d8324d567e37a1a3bf98aa97b9737b43087c8df63db40a9444f055"
+    },
+    {
+      "letter": "P",
+      "start": 22.71,
+      "end": 23.27,
+      "size": 6525,
+      "sha256": "d79ced9d6e70d001e620d4077ed14af5efe44a2422b0b7991f239e92d1737de9"
+    },
+    {
+      "letter": "Q",
+      "start": 24.14,
+      "end": 24.79,
+      "size": 7485,
+      "sha256": "9700302c221be9eaf6b59b14ede2738ed45c5f298b26c53b812f0af20d47f9c3"
+    },
+    {
+      "letter": "R",
+      "start": 25.86,
+      "end": 26.53,
+      "size": 7485,
+      "sha256": "ab12db8080767e8ae78ee9fe273739cd3461fa23e53809127ba85493cec00331"
+    },
+    {
+      "letter": "S",
+      "start": 27.46,
+      "end": 28.16,
+      "size": 7965,
+      "sha256": "cac7b63af75702322e1214a8abf9a6ddaf8823512cb71ca3975861dd22d7b5ef"
+    },
+    {
+      "letter": "T",
+      "start": 28.81,
+      "end": 29.39,
+      "size": 6765,
+      "sha256": "68e45e70d0312dd3a07c540d44599af1606c29d49ea1a2311b78701dbc84b5e4"
+    },
+    {
+      "letter": "U",
+      "start": 30.34,
+      "end": 30.89,
+      "size": 6285,
+      "sha256": "4682dfa0991ddc25d4bfadfa05f8182eb8d49c6d4f562746592cf6b9c78a5bb0"
+    },
+    {
+      "letter": "V",
+      "start": 31.74,
+      "end": 32.44,
+      "size": 7965,
+      "sha256": "5a96411125b64b16b6fda00f57f72938245655cca0f9f8fcc13e1c0e7a1cd721"
+    },
+    {
+      "letter": "W",
+      "start": 33.33,
+      "end": 34.06,
+      "size": 8205,
+      "sha256": "13407b57660a0c1ee100646925a419849e6bcdab1dda1fe45235676ffd185f1d"
+    },
+    {
+      "letter": "X",
+      "start": 34.77,
+      "end": 35.52,
+      "size": 8445,
+      "sha256": "40b2c409341d026168f4171034e10bbef111b6f4d6f4ca9fd836070aff8a1c9e"
+    },
+    {
+      "letter": "Y",
+      "start": 36.12,
+      "end": 36.84,
+      "size": 7965,
+      "sha256": "8d8a25ed90dfd2eefcf341bbdc896b489f7d323841fef1b57e49532439863aae"
+    },
+    {
+      "letter": "Z",
+      "start": 37.73,
+      "end": 39.82,
+      "size": 21885,
+      "sha256": "97374dd78e7b5f547d68d9eca86cfc03b28e23b1f503f67a7e4ab00defb7dc47"
+    }
+  ]
+}
