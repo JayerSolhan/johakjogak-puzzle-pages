@@ -1,5 +1,5 @@
-// Alphabet Castle v1.5.1 — network-first for updated pages, cache for offline use.
-const CACHE='unicorn-alphabet-v1-5-1-pages';
+// Alphabet Castle v1.5.2 — network-first for updated pages, cache for offline use.
+const CACHE='unicorn-alphabet-v1-5-2-pages';
 const PREFIX='unicorn-alphabet-';
 const CORE=['./','./index.html','./icon.svg','./manifest.webmanifest'];
 const ROOT=new URL('./',self.registration.scope);
