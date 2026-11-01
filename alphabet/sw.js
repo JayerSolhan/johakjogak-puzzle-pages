@@ -19,11 +19,15 @@ self.addEventListener('fetch',event=>{
   const url=new URL(req.url);
   // Cache the CC-licensed standalone pronunciation clips after their first successful playback.
   if(url.hostname==='upload.wikimedia.org'&&url.pathname.startsWith('/wikipedia/commons/')){
+    // Media requests frequently use HTTP Range (206). Never intercept/cache partial audio.
+    if(req.headers.has('range'))return;
     event.respondWith((async()=>{
       const store=await caches.open(CACHE),cached=await store.match(req);
       if(cached)return cached;
       const live=await fetch(req);
-      if(live.ok||live.type==='opaque')await store.put(req,live.clone());
+      if(live.status===200||live.type==='opaque'){
+        try{await store.put(req,live.clone())}catch{/* caching is optional; playback must still work */}
+      }
       return live;
     })());return;
   }
