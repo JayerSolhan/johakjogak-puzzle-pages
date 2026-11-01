@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "반짝반짝 알파벳 성",
+  "short_name": "반짝 ABC",
+  "description": "유니콘과 함께 알파벳 이름을 듣고 맞히는 놀이",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fdf2ff",
+  "theme_color": "#fbe6f5",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
