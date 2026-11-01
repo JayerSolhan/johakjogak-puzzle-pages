@@ -1,4 +1,4 @@
-const CACHE='unicorn-alphabet-v1-2-pages';
+const CACHE='unicorn-alphabet-v1-4-pages';
 const PREFIX='unicorn-alphabet-';
 const FILES=['./','./index.html','./icon.svg','./manifest.webmanifest'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting()))});
